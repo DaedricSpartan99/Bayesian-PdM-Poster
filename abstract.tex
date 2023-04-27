@@ -1,0 +1,10 @@
+\headerbox{Abstract}{name=abstract,column=0,row=0}{
+
+%The computation of likelihood function evaluation can take minutes or even hours, it's then fundamental to limit the number of likelihood calls.
+%Active Learning Reliability (ARL) \cite{arl, bbus} is a framework exploiting surrogate model techniques and uncertainty quantification which allows to gain information around the limit state surface while limiting at the same time the number of forward model evaluations.
+In this master thesis we explore and extend a recently proposed method to perform \textit{Bayesian inversion}, focusing on the reconstruction of the \textit{likelihood function} by combining \textit{active learning} \cite{arl} and \textit{Polynomial chaos Kriging} (PCK) \cite{pck}.
+The basic idea is exploiting the recently proposed framework of \textit{Bayesian Updating with Structural Reliability} (BUS) \cite{bus}, which allows one to express the general \textit{Bayesian inference} formulation into a \textit{Structural Reliability} (SR) problem and rare event estimation.
+\par\noindent
+The \textit{active learning} approach allows to fix a limited budget to the \textit{forward model} evaluations for the PCK reconstruction, thus furnishing a cheap evaluator of the likelihood function in the most important regions.
+%More specifically, a Polynomial Chaos Kriging (PCK) \cite{pck}  surrogate is adopted for the log-likelihood function and SuS is used to computationally solve the Bayesian inverse problem. 
+}

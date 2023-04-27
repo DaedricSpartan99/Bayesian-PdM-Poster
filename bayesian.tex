@@ -1,0 +1,21 @@
+\headerbox{Bayesian inversion}{name=problem,column=0,row=0,below=abstract}{
+%In a context of Uncertainty Quantification, the assessment of  physical computational models response 
+%\par\noindent
+Bayesian inversion exploits Bayes theorem to infer the probability distribution $\pi$ associated to a random variable $\vec{X} \in \Dx \subset \R^M$. 
+
+%$\vec{X} \in \Dx$ basing on real observed data $\mathcal{Y} \in \Dy$. The likelihood $\Lk : \Dx \rightarrow \R$ expresses the probability density function of observations inferred by given parameters and 
+
+\begin{itemize}
+\item $\pi : \Dx \rightarrow \R$, prior distribution.
+\item $\Lk : \Dx \rightarrow \R$, likelihood distribution expressing evidence of \\
+observations $\vec{y} \in \mathcal{D}_{\vec{Y}} \subset \R^N$ affecting $\vec{X}$.
+\end{itemize}
+
+{\smaller
+$$
+\pi(\vec{x}|\vec{y}) = \frac{\Lk(\vec{x};\vec{y}) \pi(\vec{x})}{\mathcal{Z}}, \quad \mathcal{Z} \stackrel{\text{def}}{=} \int\limits_{\Dx} \Lk(\vec{x};\vec{y}) \pi(\vec{x}) d\vec{x}
+$$
+}
+
+is called the distribution of $\vec{X}$ posterior to the observations $\vec{y}$. 
+}

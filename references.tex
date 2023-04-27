@@ -1,0 +1,19 @@
+\headerbox{References}{name=references,column=0,below=suspck,above=bottom}{
+\smaller													% Make the whole text smaller
+\vspace{-0.4em} 										% Save some space at the beginning
+\bibliographystyle{plain}							% Use plain style
+\renewcommand{\section}[2]{\vskip 0.05em}		% Omit "References" title
+{\footnotesize
+\begin{thebibliography}{1}							% Simple bibliography with widest label of 1
+\itemsep=-0.01em										% Save space between the separation
+\setlength{\baselineskip}{0.4em}					% Save space with longer lines
+%\bibitem{bayesinv} Tarantola, Albert: \emph{Inverse Problem Theory and Methods for Model Parameter Estimation}
+\bibitem{bus} Daniel Straub  and Iason Papaioannou: \emph{Bayesian Updating with Structural Reliability Methods}
+\bibitem{sus} Siu-Kui Au and James L. Beck: \emph{Estimation of small failure probabilities in high dimensions by subset simulation}.
+\bibitem{arl} Rui Teixeira and Maria Nogal and Alan O'Connor: \emph{Adaptive approaches in metamodel-based reliability analysis: A review}.
+%\bibitem{bbus} D. Rossat and J. Baroth and M. Briffaut and F. Dufour : \emph{Bayesian inversion using adaptive Polynomial Chaos Kriging within Subset Simulation}.
+\bibitem{pck} Pierric Kersaudy and Bruno Sudret and Nadège Varsier and Odile Picon and Joe Wiart : \emph{A new surrogate modeling technique combining Kriging and polynomial chaos expansions - Application to uncertainty analysis in computational dosimetry}
+\end{thebibliography}
+}
+
+}
